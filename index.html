@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гайхамшгууд - Нэг Хуудас</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="home">
+<h1>Дэлхийн Эртний Гайхамшгууд</h1>
+<nav>
+    <a href="#home">Нүүр</a>
+    <a href="#wonder1">Гайхамшиг 1</a>
+    <a href="#wonder2">Гайхамшиг 2</a>
+    <a href="#wonder3">Гайхамшиг 3</a>
+    <a href="#contact">Холбоо барих</a>
+</nav>
+</header>
+
+<section class="intro fade-in">
+<img src="images/banner.jpg" alt="Banner">
+<p>Эртний дэлхийн долоон гайхамшгийн түүхийг хамтдаа судалцгаая.</p>
+</section>
+
+<section id="wonder1" class="wonder fade-in">
+<h2>1. Гизагийн Пирамид</h2>
+<img src="images/wonder1.jpg" alt="Giza Pyramid">
+<p>Гизагийн Их Пирамид бол дэлхийн хамгийн эртний, одоо ч үлдсэн цор ганц гайхамшиг юм.</p>
+</section>
+
+<section id="wonder2" class="wonder fade-in">
+<h2>2. Зевсийн Хөшөө</h2>
+<img src="images/wonder2.jpg" alt="Zeus Statue">
+<p>Грекийн Олимп хотод байрлах энэ хөшөө нь эртний Грекийн уран барилгын гайхамшиг юм.</p>
+</section>
+
+<section id="wonder3" class="wonder fade-in">
+<h2>3. Александриян Гэрэлт Цамхаг</h2>
+<img src="images/wonder3.jpg" alt="Lighthouse of Alexandria">
+<p>Энэ гэрэлт цамхаг нь түүхэн далайчдад гэрэл гэгээ болж өгдөг байжээ.</p>
+</section>
+
+<section id="contact" class="contact fade-in">
+<h2>Холбоо Барих</h2>
+<img src="images/contact.jpg" alt="Contact">
+<p>Бидэнтэй холбогдохыг хүсвэл и-мэйл илгээнэ үү: <strong>student@example.com</strong></p>
+</section>
+
+<footer>
+<p>© 2025 Бие Даалт 2 - Түүхэн Гайхамшиг</p>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href'))
+    .scrollIntoView({ behavior: 'smooth' });
+    });
+});
+</script>
+
+</body>
+</html>
